@@ -10,7 +10,7 @@
 	<form action="register.php" method="post">
 		<div>
 			<label for="full-name">Full Name:</label> 
-			<input type="text" id="full-name" required></input>
+			<input type="text" id="full-name" required placeholder="Ben Ebbott"></input>
 		</div>
 
 		<div>
@@ -24,22 +24,73 @@
 		</div>
 		
 		<div>	
-			<label for="website">Your website</label>
-			<input type="url" id="website" ></input>
+			<label for="website">Your website:</label>
+			<input type="url" id="website" required value="http://"></input>
 		</div>
 
 		<div>	
-			<label for="quantity">Quantity</label>
+			<label for="quantity">Quantity:</label>
 			<input type="number" id="quantity" min="1" ></input>
 		</div>
 
 		<div>	
-			<label for="date">Date</label>
+			<label for="date">Date:</label>
 			<input type="date" id="date"  ></input>
 		</div>
 		
-		<input type="submit">
 
+		<div>
+			<label for="country">Your Country</label>
+			<select name="country" id="country">
+				<option value="nz">Please Select...</option>
+
+				<optgroup label="Oceania">
+					<option value="nz">New Zealand</option>
+					<option value="aus">Australia</option>
+				</optgroup>
+
+				<option value="uk">United Kingdom</option>
+				<optgroup label="Asia">
+				<option value="ind">India</option>
+				<option value="ch">China</option>
+				</optgroup>	
+			</select>
+		</div>
+
+		<div>
+			<input type="radio" id="male" name="gender"></input>
+			<label id="male">Male</label>
+		</div>
+		<div>
+			<input type="radio" id="female" name="gender"></input>
+			<label id="female">Female</label>
+		</div>
+
+		<div>
+			<input type="radio" id="other" name="gender"></input>
+			<label id="other">Other</label>
+		</div>
+
+		<div>
+			<input type="checkbox" id="remember" checked></input>
+			<label for="remember">Remember Me</label>
+		</div>
+
+		<div>
+			<label for="post">Blog Post</label>
+			<textarea name="" id="post" cols="30" rows="10">Post here...</textarea>
+		</div>
+
+		<div>
+			<label for="search">Search</label>
+			<input type="search" id="search"></input>
+		</div>
+
+		<div>
+			<progress value="10" max="100"></progress>
+		</div>
+
+		<input type="submit">
 
 		
 	</form>
